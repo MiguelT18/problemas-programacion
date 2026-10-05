@@ -1,0 +1,332 @@
+1. INSTRUCCIONES:
+2. Cada programa debe ser escrito en un archivo independiente, denominado: Problema1.cpp, Problema2.cpp, etc., según corresponda al número específico de cada enunciado.
+3. De ser necesario, en cada problema se pueden usar las funciones adicionales que se vean por conveniente.
+4. La función requerida debe mantener el encabezado exacto especificado en cada enunciado.
+5. Los problemas están ordenados de menor a mayor dificultad.
+6. Antes de programar, escribir en papel el algoritmo y seguir a mano un ejemplo pequeño, contando paso a paso las operaciones (comparaciones, intercambios o desplazamientos) que se realizan. Los problemas 2, 3, 4 y 10 piden precisamente contar esas operaciones, así que el conteo a mano debe coincidir con lo que imprime el programa.
+
+
+Problema1:
+
+Escribir la función: bool esOrdenado(vector<int> vec), que devuelva true si los elementos del vector están en orden ascendente (se permiten valores repetidos), y false en caso contrario. La función debe resolverse de forma iterativa, con una estructura repetitiva. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función esOrdenado() e imprimir: "Ordenado" o "Desordenado", según el resultado de la función.
+
+EJEMPLO DE ENTRADA
+3
+1 3 5
+EJEMPLO DE SALIDA
+Ordenado
+
+EJEMPLO DE ENTRADA
+3
+1 5 3
+EJEMPLO DE SALIDA
+Desordenado
+
+EJEMPLO DE ENTRADA
+4
+-5 -1 -1 0
+EJEMPLO DE SALIDA
+Ordenado
+
+EJEMPLO DE ENTRADA
+1
+9
+EJEMPLO DE SALIDA
+Ordenado
+
+
+Problema2:
+
+Escribir la función: long long ordenarBurbuja(vector<int>& vec), que ordene el vector en orden ascendente usando el método de la burbuja y devuelva la cantidad de comparaciones entre elementos que realizó. La pasada se hace comparando pares vec[j] y vec[j+1] e intercambiándolos si están fuera de orden, y el algoritmo debe detenerse en cuanto una pasada completa no realice ningún intercambio. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función ordenarBurbuja(), imprimir el vector ordenado en una línea (valores separados por espacios simples) y en la línea siguiente imprimir la cantidad de comparaciones que la función devuelve.
+
+EJEMPLO DE ENTRADA
+1
+9
+EJEMPLO DE SALIDA
+9
+0
+
+EJEMPLO DE ENTRADA
+3
+1 5 3
+EJEMPLO DE SALIDA
+1 3 5
+3
+
+EJEMPLO DE ENTRADA
+4
+2 2 3 3
+EJEMPLO DE SALIDA
+2 2 3 3
+3
+
+EJEMPLO DE ENTRADA
+5
+5 4 3 2 1
+EJEMPLO DE SALIDA
+1 2 3 4 5
+10
+
+
+Problema3:
+
+Escribir la función: int ordenarSeleccion(vector<int>& vec), que ordene el vector en orden ascendente usando el método de la selección y devuelva la cantidad de intercambios que realizó. En cada posición i se busca el menor elemento del rango [i, n-1] y, si no está en i, se intercambia con la posición i. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función ordenarSeleccion(), imprimir el vector ordenado en una línea y en la línea siguiente imprimir la cantidad de intercambios que la función devuelve.
+
+EJEMPLO DE ENTRADA
+4
+8 4 2 9
+EJEMPLO DE SALIDA
+2 4 8 9
+1
+
+EJEMPLO DE ENTRADA
+3
+3 2 1
+EJEMPLO DE SALIDA
+1 2 3
+1
+
+EJEMPLO DE ENTRADA
+5
+1 2 3 4 5
+EJEMPLO DE SALIDA
+1 2 3 4 5
+0
+
+EJEMPLO DE ENTRADA
+4
+4 3 2 1
+EJEMPLO DE SALIDA
+1 2 3 4
+2
+
+
+Problema4:
+
+Escribir la función: int ordenarInsercion(vector<int>& vec), que ordene el vector en orden ascendente usando el método de la inserción y devuelva la cantidad de desplazamientos que realizó. Un desplazamiento es mover un elemento una posición hacia la derecha para hacerle lugar a la clave que se está insertando; mover la clave a su posición final no cuenta como desplazamiento. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función ordenarInsercion(), imprimir el vector ordenado en una línea y en la línea siguiente imprimir la cantidad de desplazamientos que la función devuelve.
+
+EJEMPLO DE ENTRADA
+4
+9 3 7 1
+EJEMPLO DE SALIDA
+1 3 7 9
+5
+
+EJEMPLO DE ENTRADA
+4
+1 2 3 4
+EJEMPLO DE SALIDA
+1 2 3 4
+0
+
+EJEMPLO DE ENTRADA
+3
+5 1 1
+EJEMPLO DE SALIDA
+1 1 5
+2
+
+EJEMPLO DE ENTRADA
+5
+3 4 1 2 5
+EJEMPLO DE SALIDA
+1 2 3 4 5
+4
+
+
+Problema5:
+
+Escribir la función: int particion(vector<int>& vec, int ini, int fin), que reorganice el rango [ini, fin] del vector usando como pivote el último elemento (vec[fin]) y devuelva la posición final donde quedó ese pivote. Todos los valores menores o iguales al pivote deben quedar a la izquierda y los mayores a la derecha. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función particion(vec, 0, n - 1), imprimir el vector resultante tras la partición en una línea y en la línea siguiente imprimir la posición que la función devuelve.
+
+EJEMPLO DE ENTRADA
+5
+4 7 2 9 1
+EJEMPLO DE SALIDA
+1 7 2 9 4
+0
+
+EJEMPLO DE ENTRADA
+6
+9 3 7 1 8 4
+EJEMPLO DE SALIDA
+3 1 4 9 8 7
+2
+
+EJEMPLO DE ENTRADA
+4
+2 8 6 3
+EJEMPLO DE SALIDA
+2 3 6 8
+1
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+5
+0
+
+
+Problema6:
+
+Escribir la función: void ordenarRapida(vector<int>& vec), que ordene el vector en orden ascendente con el método de la ordenación rápida (quicksort): se particiona el rango usando la función particion() del Problema 5 y luego se aplica el mismo proceso de forma recursiva a los dos subrangos (antes del pivote y después del pivote), hasta llegar a rangos de un solo elemento. Cada programa es independiente, por lo que el archivo Problema6.cpp debe contener también la función particion(). Puede usarse una función auxiliar con parámetros adicionales para los límites del rango. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función ordenarRapida() e imprimir el vector ordenado en una línea.
+
+EJEMPLO DE ENTRADA
+5
+4 7 2 9 1
+EJEMPLO DE SALIDA
+1 2 4 7 9
+
+EJEMPLO DE ENTRADA
+6
+9 3 7 1 8 4
+EJEMPLO DE SALIDA
+1 3 4 7 8 9
+
+EJEMPLO DE ENTRADA
+4
+2 8 6 3
+EJEMPLO DE SALIDA
+2 3 6 8
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+5
+
+
+Problema7:
+
+Escribir la función: void ordenarFusion(vector<int>& vec), que ordene el vector en orden ascendente con el método de la fusión (merge sort): se divide el rango por la mitad hasta llegar a vectores de un solo elemento y luego se fusionan dos rangos ya ordenados recorriéndolos de menor a mayor. Puede usarse una función auxiliar con parámetros adicionales para los límites del rango. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función ordenarFusion() e imprimir el vector ordenado en una línea.
+
+EJEMPLO DE ENTRADA
+5
+4 7 2 9 1
+EJEMPLO DE SALIDA
+1 2 4 7 9
+
+EJEMPLO DE ENTRADA
+8
+8 7 6 5 4 3 2 1
+EJEMPLO DE SALIDA
+1 2 3 4 5 6 7 8
+
+EJEMPLO DE ENTRADA
+6
+3 -1 4 -1 5 9
+EJEMPLO DE SALIDA
+-1 -1 3 4 5 9
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+5
+
+
+Problema8:
+
+Escribir la función: int buscarLineal(vector<int> vec, int x), que recorra el vector desde la posición 0 y devuelva la posición (índice, empezando en 0) donde aparece por primera vez el valor x, o -1 si x no está en el vector. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros (no necesariamente ordenados) y cargarlos a un vector, leer el valor x, llamar a la función buscarLineal() e imprimir la posición que la función devuelve.
+
+EJEMPLO DE ENTRADA
+5
+1 3 5 7 9
+7
+EJEMPLO DE SALIDA
+3
+
+EJEMPLO DE ENTRADA
+5
+1 3 5 7 9
+4
+EJEMPLO DE SALIDA
+-1
+
+EJEMPLO DE ENTRADA
+6
+-10 -3 0 4 8 15
+-10
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+4
+2 2 2 2
+2
+EJEMPLO DE SALIDA
+0
+
+
+Problema9:
+
+Escribir la función: int buscarBinaria(vector<int> vec, int x), que devuelva la posición (índice, empezando en 0) del valor x en un vector ordenado de forma ascendente, o -1 si x no está. Se deben usar dos extremos (uno para el inicio y otro para el final del rango) y dividir el rango a la mitad en cada paso, hasta que el rango quede vacío. La solución debe ser iterativa, sin recursión. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros ordenados de menor a mayor y cargarlos a un vector, leer el valor x, llamar a la función buscarBinaria() e imprimir la posición que la función devuelve.
+
+EJEMPLO DE ENTRADA
+5
+1 3 5 7 9
+7
+EJEMPLO DE SALIDA
+3
+
+EJEMPLO DE ENTRADA
+5
+1 3 5 7 9
+4
+EJEMPLO DE SALIDA
+-1
+
+EJEMPLO DE ENTRADA
+6
+-10 -3 0 4 8 15
+15
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+1
+5
+5
+EJEMPLO DE SALIDA
+0
+
+
+Problema10:
+
+Escribir la función: void compararMetodos(vector<int> vec), que aplique sobre tres copias del vector los tres métodos vistos (burbuja del Problema 2, selección del Problema 3 e inserción del Problema 4) e imprima, para cada método, una línea con el siguiente formato exacto:
+
+Nombre: comparaciones C, movimientos M
+
+Donde C es la cantidad de comparaciones que hizo ese método y M la cantidad de movimientos: intercambios en la burbuja y en la selección, y desplazamientos en la inserción. Los tres métodos deben dar exactamente los mismos conteos que devuelven las funciones de los Problemas 2, 3 y 4 cuando se las llama con el mismo vector. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función compararMetodos() e imprimir únicamente las tres líneas con los conteos (sin imprimir el vector).
+
+EJEMPLO DE ENTRADA
+1
+9
+EJEMPLO DE SALIDA
+Burbuja: comparaciones 0, movimientos 0
+Seleccion: comparaciones 0, movimientos 0
+Insercion: comparaciones 0, movimientos 0
+
+EJEMPLO DE ENTRADA
+3
+1 5 3
+EJEMPLO DE SALIDA
+Burbuja: comparaciones 3, movimientos 1
+Seleccion: comparaciones 3, movimientos 1
+Insercion: comparaciones 3, movimientos 1
+
+EJEMPLO DE ENTRADA
+5
+1 2 3 4 5
+EJEMPLO DE SALIDA
+Burbuja: comparaciones 4, movimientos 0
+Seleccion: comparaciones 10, movimientos 0
+Insercion: comparaciones 4, movimientos 0
+
+EJEMPLO DE ENTRADA
+5
+5 4 3 2 1
+EJEMPLO DE SALIDA
+Burbuja: comparaciones 10, movimientos 10
+Seleccion: comparaciones 10, movimientos 2
+Insercion: comparaciones 10, movimientos 10
