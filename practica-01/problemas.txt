@@ -1,0 +1,337 @@
+INSTRUCCIONES:
+1. Cada programa debe ser escrito en un archivo independiente, denominado: Problema1.cpp, Problema2.cpp, etc., según corresponda al número específico de cada enunciado.
+2. De ser necesario, en cada problema se pueden usar las funciones adicionales que se vean por conveniente.
+3. La función requerida debe mantener el encabezado exacto especificado en cada enunciado.
+4. Los problemas están ordenados de menor a mayor dificultad.
+5. Antes de programar, escribir en papel: el caso base, cómo se achica el problema y el seguimiento a mano de un ejemplo.
+
+
+Problema1:
+
+Escribir la función recursiva: int sumaDigitos(int n), que reciba un número natural n y devuelva la suma de sus dígitos. El programa principal debe leer un número n (0 <= n <= 1e9), llamar a la función sumaDigitos() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+0
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+7
+EJEMPLO DE SALIDA
+7
+
+EJEMPLO DE ENTRADA
+1234
+EJEMPLO DE SALIDA
+10
+
+EJEMPLO DE ENTRADA
+999999999
+EJEMPLO DE SALIDA
+81
+
+
+Problema2:
+
+Escribir la función recursiva: long long sumaPares(int a, int b), que devuelva la suma de todos los números pares que hay entre a y b, inclusive. Tener en cuenta que a puede ser mayor que b. El programa principal debe leer dos números enteros: a y b (0 <= a, b <= 1e5), llamar a la función sumaPares() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+3 10
+EJEMPLO DE SALIDA
+28
+
+EJEMPLO DE ENTRADA
+0 0
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+7 7
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+10 3
+EJEMPLO DE SALIDA
+28
+
+
+Problema3:
+
+Escribir la función recursiva: int contarVocales(string s), que devuelva la cantidad de vocales (a, e, i, o, u) que hay en la cadena. La cadena solo contiene letras minúsculas sin tildes y espacios. El programa principal debe leer una línea completa, llamar a la función contarVocales() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+recursion
+EJEMPLO DE SALIDA
+4
+
+EJEMPLO DE ENTRADA
+xyz
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+aeiou
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+programa de prueba
+EJEMPLO DE SALIDA
+7
+
+
+Problema4:
+
+Escribir la función recursiva: bool esPalindromo(string s), que devuelva true si la palabra se lee igual de izquierda a derecha que de derecha a izquierda, y false en caso contrario. El programa principal debe leer una palabra, llamar a la función esPalindromo() e imprimir: "Es palindromo" o "No es palindromo", según corresponda.
+
+EJEMPLO DE ENTRADA
+reconocer
+EJEMPLO DE SALIDA
+Es palindromo
+
+EJEMPLO DE ENTRADA
+hola
+EJEMPLO DE SALIDA
+No es palindromo
+
+EJEMPLO DE ENTRADA
+a
+EJEMPLO DE SALIDA
+Es palindromo
+
+EJEMPLO DE ENTRADA
+abca
+EJEMPLO DE SALIDA
+No es palindromo
+
+
+Problema5:
+
+Escribir la función recursiva: int posicionDelMenor(vector<int> vec), que devuelva la posición (índice, empezando en 0) del menor elemento del vector. En caso de empate, se devuelve la posición del primero que aparece. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función posicionDelMenor() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+4
+8 4 2 9
+EJEMPLO DE SALIDA
+2
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+5
+34 -4 93 -54 33
+EJEMPLO DE SALIDA
+3
+
+EJEMPLO DE ENTRADA
+4
+3 1 1 5
+EJEMPLO DE SALIDA
+1
+
+
+Problema6:
+
+Escribir la función recursiva: bool estaOrdenado(vector<int> vec), que devuelva true si los elementos del vector están en orden ascendente (se permiten valores repetidos), y false en caso contrario. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función estaOrdenado() e imprimir: "Ordenado" o "Desordenado", según el resultado de la función.
+
+EJEMPLO DE ENTRADA
+3
+1 3 5
+EJEMPLO DE SALIDA
+Ordenado
+
+EJEMPLO DE ENTRADA
+3
+1 5 3
+EJEMPLO DE SALIDA
+Desordenado
+
+EJEMPLO DE ENTRADA
+1
+9
+EJEMPLO DE SALIDA
+Ordenado
+
+EJEMPLO DE ENTRADA
+4
+2 2 3 3
+EJEMPLO DE SALIDA
+Ordenado
+
+
+Problema7:
+
+Escribir la función recursiva: int mcd(int a, int b), que devuelva el máximo común divisor de a y b, usando el algoritmo de Euclides (mcd(a, b) = mcd(b, a % b), y mcd(a, 0) = a). El programa principal debe leer dos números enteros: a y b (0 < a, b <= 1e9), llamar a la función mcd() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+48 18
+EJEMPLO DE SALIDA
+6
+
+EJEMPLO DE ENTRADA
+17 5
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+100 100
+EJEMPLO DE SALIDA
+100
+
+EJEMPLO DE ENTRADA
+270 192
+EJEMPLO DE SALIDA
+6
+
+
+Problema8:
+
+Escribir la función recursiva: long long potencia(int a, int b), que devuelva a elevado a la b, sin usar la función pow ni bucles. El programa principal debe leer dos números enteros: a y b (1 <= a <= 10, 0 <= b <= 18), llamar a la función potencia() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+2 10
+EJEMPLO DE SALIDA
+1024
+
+EJEMPLO DE ENTRADA
+5 0
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+3 4
+EJEMPLO DE SALIDA
+81
+
+EJEMPLO DE ENTRADA
+10 18
+EJEMPLO DE SALIDA
+1000000000000000000
+
+
+Problema9:
+
+Escribir la función recursiva: char caracterMasFrecuente(vector<char> vec), que devuelva el carácter que aparece con mayor frecuencia en el vector. En caso de empate, la función debe devolver el carácter que aparece último en el vector. El programa principal debe leer un entero n (0 < n < 100), luego leer n caracteres, llamar a la función caracterMasFrecuente() e imprimir el carácter que la función devuelve.
+
+EJEMPLO DE ENTRADA
+5
+a b c a a
+EJEMPLO DE SALIDA
+a
+
+EJEMPLO DE ENTRADA
+4
+x y z x
+EJEMPLO DE SALIDA
+x
+
+EJEMPLO DE ENTRADA
+6
+a b b b a a
+EJEMPLO DE SALIDA
+b
+
+EJEMPLO DE ENTRADA
+7
+a b c d e f g
+EJEMPLO DE SALIDA
+g
+
+
+Problema10:
+
+Escribir la función recursiva: string invertirPalabras(string s), que devuelva la cadena con el orden de las palabras invertido, sin invertir las letras de cada palabra. Las palabras están separadas por un único espacio. El programa principal debe leer una línea completa, llamar a la función invertirPalabras() e imprimir la cadena que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+hola que tal
+EJEMPLO DE SALIDA
+tal que hola
+
+EJEMPLO DE ENTRADA
+recursion
+EJEMPLO DE SALIDA
+recursion
+
+EJEMPLO DE ENTRADA
+a b c d
+EJEMPLO DE SALIDA
+d c b a
+
+EJEMPLO DE ENTRADA
+programa de prueba
+EJEMPLO DE SALIDA
+prueba de programa
+
+
+Problema11:
+
+Escribir la función recursiva: bool busquedaBinaria(vector<int> vec, int x), que devuelva true si el valor x se encuentra en el vector, y false en caso contrario. El vector viene ordenado de forma ascendente y la búsqueda debe dividir el rango a la mitad en cada paso. Se permite usar una función auxiliar con parámetros adicionales (por ejemplo, los límites del rango). El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros ordenados y cargarlos a un vector, leer el valor x, llamar a la función busquedaBinaria() e imprimir: "Encontrado" o "No encontrado", según el resultado de la función.
+
+EJEMPLO DE ENTRADA
+5
+1 3 5 7 9
+7
+EJEMPLO DE SALIDA
+Encontrado
+
+EJEMPLO DE ENTRADA
+5
+1 3 5 7 9
+4
+EJEMPLO DE SALIDA
+No encontrado
+
+EJEMPLO DE ENTRADA
+1
+5
+5
+EJEMPLO DE SALIDA
+Encontrado
+
+EJEMPLO DE ENTRADA
+6
+-10 -3 0 4 8 15
+-10
+EJEMPLO DE SALIDA
+Encontrado
+
+
+Problema12:
+
+Escribir la función recursiva: vector<string> permutaciones(string s), que devuelva un vector con todas las permutaciones de los caracteres de la cadena. La cadena no tiene caracteres repetidos y viene ordenada de forma ascendente, y las permutaciones deben devolverse en orden lexicográfico. El programa principal debe leer una cadena (1 <= longitud <= 6), llamar a la función permutaciones() e imprimir cada permutación en una línea distinta.
+
+EJEMPLO DE ENTRADA
+a
+EJEMPLO DE SALIDA
+a
+
+EJEMPLO DE ENTRADA
+ab
+EJEMPLO DE SALIDA
+ab
+ba
+
+EJEMPLO DE ENTRADA
+abc
+EJEMPLO DE SALIDA
+abc
+acb
+bac
+bca
+cab
+cba
+
+EJEMPLO DE ENTRADA
+123
+EJEMPLO DE SALIDA
+123
+132
+213
+231
+312
+321
