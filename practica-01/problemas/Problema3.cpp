@@ -7,7 +7,7 @@ int contarVocales(string s);
 
 int main() {
   string s;
-  cin >> s;
+  getline(cin, s);
 
   cout << contarVocales(s) << endl;
   
