@@ -1,0 +1,20 @@
+# Binarios y objetos de compilacion de C++
+*.exe
+*.o
+*.obj
+*.out
+*.gch
+*.dll
+*.a
+*.lib
+
+# Carpetas de salida de los compiladores
+exec/
+debug/
+release/
+
+# Editores y sistemas
+.vscode/
+.idea/
+*.swp
+*.tmp
