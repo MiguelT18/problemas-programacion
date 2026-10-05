@@ -1,0 +1,7 @@
+# Normaliza texto y usa finales de linea CRLF al hacer checkout (Windows/Code::Blocks)
+* text=auto eol=crlf
+
+# Binarios
+*.exe binary
+*.o binary
+*.dll binary
