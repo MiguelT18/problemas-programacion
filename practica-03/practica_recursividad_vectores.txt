@@ -1,0 +1,357 @@
+PRÁCTICA DE RECURSIVIDAD Y VECTORES
+
+INSTRUCCIONES:
+1. Cada programa debe ser escrito en un archivo independiente, denominado: Problema1.cpp, Problema2.cpp, etc., según corresponda al número específico de cada enunciado.
+2. De ser necesario, en cada problema se pueden usar las funciones adicionales que se vean por conveniente.
+3. La función requerida debe mantener el encabezado exacto especificado en cada enunciado.
+4. Los problemas están ordenados de menor a mayor dificultad: los primeros usan solo recursividad con números y cadenas, y los últimos combinan recursividad con vectores.
+5. Antes de programar, escribir en papel: el caso base, cómo se achica el problema y el seguimiento a mano de un ejemplo pequeño.
+6. Todas las funciones deben ser recursivas (no se permiten bucles for, while ni do-while dentro de ellas). Los bucles solo se permiten en el programa principal para leer datos.
+
+
+Problema1:
+
+Escribir la función recursiva: long long factorial(int n), que devuelva el factorial de n. El programa principal debe leer un número entero n (0 <= n <= 20), llamar a la función factorial() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+0
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+5
+EJEMPLO DE SALIDA
+120
+
+EJEMPLO DE ENTRADA
+10
+EJEMPLO DE SALIDA
+3628800
+
+EJEMPLO DE ENTRADA
+20
+EJEMPLO DE SALIDA
+2432902008176640000
+
+
+Problema2:
+
+Escribir la función recursiva: int contarDigitos(long long n), que devuelva la cantidad de dígitos que tiene el número n. Considerar que el número 0 tiene un dígito. El programa principal debe leer un número entero n (0 <= n <= 1e18), llamar a la función contarDigitos() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+0
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+7
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+12345
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+1000000000000000000
+EJEMPLO DE SALIDA
+19
+
+
+Problema3:
+
+Escribir la función recursiva: void imprimirDescendente(int n), que imprima en orden descendente todos los números desde n hasta 1, separados por espacios simples. El programa principal debe leer un número entero n (1 <= n <= 50) y llamar a la función imprimirDescendente().
+
+EJEMPLO DE ENTRADA
+1
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+3
+EJEMPLO DE SALIDA
+3 2 1
+
+EJEMPLO DE ENTRADA
+5
+EJEMPLO DE SALIDA
+5 4 3 2 1
+
+EJEMPLO DE ENTRADA
+10
+EJEMPLO DE SALIDA
+10 9 8 7 6 5 4 3 2 1
+
+
+Problema4:
+
+Escribir la función recursiva: string aBinario(int n), que devuelva la representación binaria del número n como una cadena de caracteres. El programa principal debe leer un número entero n (0 <= n <= 1e9), llamar a la función aBinario() e imprimir la cadena que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+0
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+5
+EJEMPLO DE SALIDA
+101
+
+EJEMPLO DE ENTRADA
+10
+EJEMPLO DE SALIDA
+1010
+
+EJEMPLO DE ENTRADA
+255
+EJEMPLO DE SALIDA
+11111111
+
+
+Problema5:
+
+Escribir la función recursiva: int contarCaracter(string s, char c), que devuelva la cantidad de veces que aparece el carácter c en la cadena s. El programa principal debe leer una palabra (sin espacios) y luego un carácter, llamar a la función contarCaracter() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+recursion
+r
+EJEMPLO DE SALIDA
+2
+
+EJEMPLO DE ENTRADA
+banana
+a
+EJEMPLO DE SALIDA
+3
+
+EJEMPLO DE ENTRADA
+hola
+z
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+mississippi
+s
+EJEMPLO DE SALIDA
+4
+
+
+Problema6:
+
+Escribir la función recursiva: int sumaVector(vector<int> vec), que devuelva la suma de todos los elementos del vector. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función sumaVector() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+3
+10 20 30
+EJEMPLO DE SALIDA
+60
+
+EJEMPLO DE ENTRADA
+4
+-5 5 -3 3
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+5
+1 2 3 4 5
+EJEMPLO DE SALIDA
+15
+
+
+Problema7:
+
+Escribir la función recursiva: int cantidadPares(vector<int> vec), que devuelva la cantidad de números pares (el cero y los negativos pares también cuentan) que hay en el vector. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función cantidadPares() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+5
+1 2 3 4 5
+EJEMPLO DE SALIDA
+2
+
+EJEMPLO DE ENTRADA
+3
+2 4 6
+EJEMPLO DE SALIDA
+3
+
+EJEMPLO DE ENTRADA
+1
+7
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+4
+-2 -3 0 9
+EJEMPLO DE SALIDA
+2
+
+
+Problema8:
+
+Escribir la función recursiva: vector<int> invertirVector(vector<int> vec), que devuelva un nuevo vector con los mismos elementos en orden inverso. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función invertirVector() e imprimir el vector que esa función devuelve, en una línea y con los valores separados por espacios simples.
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+4
+1 2 3 4
+EJEMPLO DE SALIDA
+4 3 2 1
+
+EJEMPLO DE ENTRADA
+3
+10 -20 30
+EJEMPLO DE SALIDA
+30 -20 10
+
+EJEMPLO DE ENTRADA
+5
+1 1 2 2 3
+EJEMPLO DE SALIDA
+3 2 2 1 1
+
+
+Problema9:
+
+Escribir la función recursiva: bool esCapicua(vector<int> vec), que devuelva true si el vector se lee igual de izquierda a derecha que de derecha a izquierda, y false en caso contrario. Se permite usar una función auxiliar con parámetros adicionales (por ejemplo, las posiciones de los extremos). El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, llamar a la función esCapicua() e imprimir: "Es capicua" o "No es capicua", según corresponda.
+
+EJEMPLO DE ENTRADA
+5
+1 2 3 2 1
+EJEMPLO DE SALIDA
+Es capicua
+
+EJEMPLO DE ENTRADA
+4
+1 2 3 4
+EJEMPLO DE SALIDA
+No es capicua
+
+EJEMPLO DE ENTRADA
+1
+7
+EJEMPLO DE SALIDA
+Es capicua
+
+EJEMPLO DE ENTRADA
+4
+5 5 5 5
+EJEMPLO DE SALIDA
+Es capicua
+
+
+Problema10:
+
+Escribir la función recursiva: vector<int> posiciones(vector<int> vec, int x), que devuelva un vector con todas las posiciones (índices, empezando en 0) donde aparece el valor x en el vector, en orden ascendente. El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros y cargarlos a un vector, leer el valor x, llamar a la función posiciones() e imprimir las posiciones separadas por espacios simples, o la frase "No encontrado" si el vector devuelto está vacío.
+
+EJEMPLO DE ENTRADA
+6
+1 2 1 3 1 4
+1
+EJEMPLO DE SALIDA
+0 2 4
+
+EJEMPLO DE ENTRADA
+5
+1 2 3 4 5
+6
+EJEMPLO DE SALIDA
+No encontrado
+
+EJEMPLO DE ENTRADA
+4
+7 7 7 7
+7
+EJEMPLO DE SALIDA
+0 1 2 3
+
+EJEMPLO DE ENTRADA
+3
+4 5 6
+6
+EJEMPLO DE SALIDA
+2
+
+
+Problema11:
+
+Escribir la función recursiva: vector<int> fusionar(vector<int> a, vector<int> b), que reciba dos vectores ordenados de forma ascendente y devuelva un nuevo vector, también ordenado, con todos los elementos de ambos (se permiten valores repetidos). Esta es la operación que usa el método de ordenación por fusión (merge sort). El programa principal debe leer un número entero n (0 < n < 100), leer n números enteros ordenados, leer un número entero m (0 < m < 100), leer m números enteros ordenados, llamar a la función fusionar() e imprimir el vector resultante en una línea, con los valores separados por espacios simples.
+
+EJEMPLO DE ENTRADA
+3
+1 3 5
+3
+2 4 6
+EJEMPLO DE SALIDA
+1 2 3 4 5 6
+
+EJEMPLO DE ENTRADA
+2
+1 1
+1
+1
+EJEMPLO DE SALIDA
+1 1 1
+
+EJEMPLO DE ENTRADA
+1
+5
+3
+1 2 3
+EJEMPLO DE SALIDA
+1 2 3 5
+
+EJEMPLO DE ENTRADA
+3
+-5 0 4
+2
+-6 10
+EJEMPLO DE SALIDA
+-6 -5 0 4 10
+
+
+Problema12:
+
+Escribir la función recursiva: bool existeSubconjunto(vector<int> vec, int objetivo), que devuelva true si existe algún subconjunto de elementos del vector cuya suma sea exactamente igual a objetivo, y false en caso contrario. Cada elemento puede usarse una sola vez, y el subconjunto vacío (suma 0) es válido. En cada llamada recursiva se decide si el último elemento se incluye o no en el subconjunto. Se permite usar una función auxiliar con parámetros adicionales. El programa principal debe leer un número entero n (0 < n <= 20), leer n números enteros positivos y cargarlos a un vector, leer el valor objetivo (0 <= objetivo <= 1000), llamar a la función existeSubconjunto() e imprimir: "Existe" o "No existe", según corresponda.
+
+EJEMPLO DE ENTRADA
+5
+3 34 4 12 5
+9
+EJEMPLO DE SALIDA
+Existe
+
+EJEMPLO DE ENTRADA
+4
+3 34 4 12
+30
+EJEMPLO DE SALIDA
+No existe
+
+EJEMPLO DE ENTRADA
+1
+5
+5
+EJEMPLO DE SALIDA
+Existe
+
+EJEMPLO DE ENTRADA
+3
+2 4 6
+11
+EJEMPLO DE SALIDA
+No existe
